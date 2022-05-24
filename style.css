@@ -1,0 +1,134 @@
+/*
+Cor1 - #000361
+Cor2 - #454AE6
+Cor3 - #0007E0
+Cor4 - #1D1F61 
+Cor5 - #0006AD
+*/
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+
+:root{
+    --Cor1: #1D3561;
+    --Cor2: #8AAAE6;
+    --Cor3: #437AE0;
+    --Cor4: #3A4861;
+    --Cor5: #345FAD;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: var(--Cor2);
+    font-family: 'Roboto Slab', serif;
+}
+header{
+    background-image: linear-gradient(to bottom, var(--Cor1), var(--Cor5)); /*gradiente*/
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+nav{
+    background-color: #437AE0;
+    padding: 10px; /*Espaçacento interno até a borda*/
+    box-shadow: 1px 1px 3px 3px; /*Sombras*/
+    text-align: center;
+}
+
+nav > a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    border-radius: 5px;
+    padding: 10px;
+    transition-duration: 1.30s;
+}
+
+nav > a:hover{
+    background-color: lightslategray;
+    color: gold;
+} 
+main{
+    background-color: azure;
+    margin: auto;
+    min-width: 320px;
+    max-width: 1000px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    padding: 20px;
+    box-shadow: 1px 1px 3px 3px;
+    border-bottom-left-radius: 30px; /*Borda inferior esquerda*/
+    border-bottom-right-radius: 30px; /*Borda inferior direita*/
+}
+main h1{
+    color: var(--Cor3);
+    background-image: linear-gradient(to right, var(--Cor1), transparent);
+    margin-bottom: 10px;
+}
+
+main p{
+    font-size: 18px;
+    text-align: justify;
+    text-indent: 40px;
+    margin-top: 10px;
+}
+
+pre{
+    font-size: 16px;
+}
+
+iframe{
+    
+    border-width: 10px;
+    border-style: double;
+    border-color: rgb(0, 0, 0);
+    margin: 20px;
+}
+
+img{
+    border-width: 10px;
+    border-style: double;
+    border-color: rgb(0, 0, 0);
+    margin: 20px;
+}
+
+aside{
+    background-color: #8AAAE6;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+aside > h3{
+    background-color: #345FAD;
+    padding: 5px;
+    color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    border-style: double;
+    border-width: 10px;
+    border-color: black;
+}
+
+aside > ul{
+    list-style-position: inside;
+    text-align: justify;
+    list-style-type: square;
+}
+
+footer{
+    background-color: #437AE0;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    text-align: center;
+    padding: 5px;
+}
+
+footer > a{
+    color: gold;
+    font-weight: bolder;
+    text-decoration: none
+}
